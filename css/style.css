@@ -1,0 +1,318 @@
+:root {
+  --primary-color: #6ca6cd;
+  --secondary-color: #666366;
+  --accent-color: #ffd700;
+  --text-color: #fff;
+  --invalid-city: red;
+  --padding: 0.5rem;
+  --text-font: Inter;
+  --heading-font: Poppins;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+  }
+
+  .main-header div,
+  .main-header div a,
+  .main-header div a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+  }
+
+  .main-header form {
+    display: flex;
+    flex-direction: column;
+    width: 219px;
+  }
+
+  .main-header form label {
+    display: none;
+  }
+
+  .main-header form div {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .main-header form div button {
+    display: table;
+    width: 31px;
+    height: 31px;
+    border: none;
+    appearance: none;
+    background-color: var(--accent-color);
+  }
+
+  .main-header form div button img {
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .main-header form div input {
+    width: 188px;
+    height: 31px;
+  }
+
+  main section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  main section .weather-img {
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .weather-img img {
+    width: 100%;
+  }
+
+  main section .weather-img figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .weather-img figcaption h1 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    padding: var(--padding);
+    font-weight: 800;
+    text-align: center;
+  }
+
+  main section .weather-img figcaption h2 {
+    font-size: 2.0625rem;
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    padding: var(--padding);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  main section .temp-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  main section .temp-detail div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .temp-detail div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .temp-detail div figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  main section .temp-detail div figure figcaption p {
+    font-size: 1rem;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    padding: var(--padding);
+    text-align: center;
+    font-weight: 500;
+  }
+
+  main section .temp-detail div figure figcaption h3 {
+    font-size: 1.6875rem;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    padding: var(--padding);
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+  }
+
+  .main-header div,
+  .main-header div a,
+  .main-header div a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+  }
+
+  .main-header form {
+    display: flex;
+    flex-direction: column;
+    width: 219px;
+  }
+
+  .main-header form label {
+    display: none;
+  }
+
+  .main-header form div {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .main-header form div button {
+    display: table;
+    width: 31px;
+    height: 31px;
+    border: none;
+    appearance: none;
+    background-color: var(--accent-color);
+  }
+
+  .main-header form div button img {
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .main-header form div input {
+    width: 188px;
+    height: 31px;
+  }
+
+  main section {
+    width: 634px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  main section .weather-img {
+    width: 634px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .weather-img img {
+    width: 224px;
+  }
+
+  main section .weather-img figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .weather-img figcaption h1 {
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    padding: var(--padding);
+    font-weight: 800;
+    text-align: center;
+  }
+
+  main section .weather-img figcaption h2 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    padding: var(--padding);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  main section .temp-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  main section .temp-detail div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .temp-detail div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  main section .temp-detail div figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  main section .temp-detail div figure figcaption p {
+    font-size: 1rem;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    padding: var(--padding);
+    text-align: center;
+    font-weight: 500;
+  }
+
+  main section .temp-detail div figure figcaption h3 {
+    font-size: 2.0625rem;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    padding: var(--padding);
+    font-weight: bold;
+  }
+}
