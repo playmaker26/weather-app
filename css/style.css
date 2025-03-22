@@ -19,6 +19,14 @@ main {
   align-items: center;
 }
 
+main section.show {
+  display: flex;
+}
+
+main section h1.invalid {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 767px) {
   .main-header {
     display: flex;
@@ -74,7 +82,7 @@ main {
 
   main section {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -223,7 +231,7 @@ main {
 
   main section {
     width: 634px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
